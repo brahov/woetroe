@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Woetroe BV Waardenburg | Engineering voor snelle machines</title>
+<meta name="description" content="Woetroe BV in Waardenburg verzorgt engineering, onderhoud, aanpassingen en afstelling van speedboten, racemotoren en circuitauto's. Alles onder een dak.">
+<meta name="theme-color" content="#0A0E11">
+<!-- Reviewadres. Bij livegang op het eigen domein wijzigen naar https://www.woetroe.nl/ -->
+<link rel="canonical" href="https://brahov.github.io/woetroe/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="nl_NL">
+<meta property="og:site_name" content="Woetroe BV">
+<meta property="og:url" content="https://brahov.github.io/woetroe/">
+<meta property="og:title" content="Woetroe BV Waardenburg | Engineering voor snelle machines">
+<meta property="og:description" content="Engineering, onderhoud, aanpassingen en afstelling van speedboten, racemotoren en circuitauto's. Werkplaats in Waardenburg, aan de A2 en de Waal.">
+<meta property="og:image" content="https://brahov.github.io/woetroe/assets/img/og-woetroe.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Speedboot op snelheid, van bovenaf">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.className += ' js';</script>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/archivo-vf.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/plexsans-vf.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutomotiveBusiness",
+  "name": "Woetroe BV",
+  "description": "Engineering, onderhoud, aanpassingen en afstelling van speedboten, racemotoren en circuitauto's.",
+  "url": "https://brahov.github.io/woetroe/",
+  "address": { "@type": "PostalAddress", "addressLocality": "Waardenburg", "addressCountry": "NL" },
+  "areaServed": ["Nederland", "België"],
+  "founder": { "@type": "Person", "name": "Wouter van Dijk" }
+}
+</script>
+</head>
+<body>
+
+<a class="btn skip" href="#wouter">Naar de inhoud</a>
+
+<header class="site-head">
+  <div class="wrap site-head__in">
+    <a class="mark" href="#top">Woetroe<span class="mark__bv">BV</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="hoofdmenu" aria-label="Menu openen">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="hoofdmenu" aria-label="Hoofdmenu">
+      <a href="#wouter">Wouter</a>
+      <a href="#referenties">In beheer</a>
+      <a href="#diensten">Diensten</a>
+      <a href="#werkplaats">Werkplaats</a>
+    </nav>
+    <a class="btn" href="#contact">Werk aanmelden <i class="btn__arrow" aria-hidden="true"></i></a>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================================================== hero -->
+<section class="hero" id="top">
+  <div class="hero__stage" aria-hidden="true">
+    <!-- Boot van bovenaf op snelheid in plaats van een meer bij zonsondergang:
+         de merken in dit segment tonen de machine aan het werk, geen sfeer. -->
+    <div class="hero__shot" data-shot="water"   data-active="true" style="background-image:url('assets/img/boat-01.jpg')"></div>
+    <div class="hero__shot" data-shot="motor"   style="background-image:url('assets/img/moto-02.jpg')"></div>
+    <div class="hero__shot" data-shot="circuit" style="background-image:url('assets/img/car-02.jpg')"></div>
+  </div>
+
+  <div class="wrap hero__in">
+    <p class="eyebrow hero__fade">Waardenburg · West Betuwe</p>
+    <h1>
+      <span class="line"><span>Wie een vliegende auto</span></span>
+      <span class="line"><span><em>vrijgeeft</em>, kijkt anders</span></span>
+      <span class="line"><span>naar uw <b class="swap" data-swap>speedboot</b>.</span></span>
+    </h1>
+    <p class="hero__sub hero__fade">
+      Wouter van Dijk gaf bij PAL-V het technische oordeel waarmee ontwerpen van de
+      vliegende auto werden vrijgegeven. Datzelfde oordeel ligt nu onder elke boot,
+      motor en auto die de werkplaats in Waardenburg verlaat.
+    </p>
+
+    <!-- Geen tablist: deze knoppen wisselen het achtergrondbeeld en het laatste
+         woord van de kop. aria-pressed beschrijft dat eerlijker dan role=tab. -->
+    <div class="disc hero__fade" role="group" aria-label="Werkgebieden">
+      <button class="disc__btn" type="button" id="tab-water" aria-pressed="true" data-shot="water" data-woord="speedboot">
+        <span class="disc__nr">01</span>
+        <span class="disc__name">Speedboten</span>
+      </button>
+      <button class="disc__btn" type="button" id="tab-motor" aria-pressed="false" data-shot="motor" data-woord="racemotor">
+        <span class="disc__nr">02</span>
+        <span class="disc__name">Racemotoren</span>
+      </button>
+      <button class="disc__btn" type="button" id="tab-circuit" aria-pressed="false" data-shot="circuit" data-woord="circuitauto">
+        <span class="disc__nr">03</span>
+        <span class="disc__name">Circuitauto's</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= wouter -->
+<section class="section section--light" id="wouter">
+  <div class="wrap who">
+    <figure class="who__fig rv" style="margin:0">
+      <img src="assets/img/wouter-van-dijk.jpg" alt="Portret van Wouter van Dijk" loading="lazy" width="800" height="1000">
+    </figure>
+    <div>
+      <p class="eyebrow">De eigenaar</p>
+      <h2 class="who__name">Wouter van Dijk</h2>
+      <p class="who__role">Oprichter en eigenaar Woetroe BV</p>
+      <p>
+        Wouter van Dijk werkte bij PAL-V, de Nederlandse ontwikkelaar van de vliegende auto.
+        Hij begon er als engineer met de verantwoordelijkheid voor het hoofdlandingsgestel en
+        het remsysteem van de Liberty, en werd later Chairman of Review: de rol waarin hij de
+        ontwerpreviews leidde en het technische oordeel gaf waarmee een ontwerp werd
+        vrijgegeven. Bij een constructie die zowel de weg op moet als de lucht in, wordt elke
+        aanname eerst nagerekend en daarna pas gebouwd. Hij is opgeleid als automotive engineer
+        aan de Hogeschool van Arnhem en Nijmegen.
+      </p>
+      <p>
+        Die manier van werken ligt onder Woetroe. Een speedboot op volgas en een racemotor in
+        een bocht zijn constructies waarin een verkeerd aangehaalde bout een ander gevolg heeft
+        dan stilstand langs de weg. Wouter richtte Woetroe op om eigenaren en teams één
+        aanspreekpunt te geven dat de techniek doorgrondt, de berekening zelf maakt en het werk
+        zelf uitvoert.
+      </p>
+      <p class="pull">
+        Eerst het hoofdlandingsgestel en het remsysteem van de PAL-V Liberty. Daarna het
+        oordeel waarmee elk ontwerp werd vrijgegeven.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== referenties -->
+<section class="section section--dark" id="referenties">
+  <div class="wrap">
+    <p class="eyebrow">In beheer</p>
+    <h2 class="h-sec">Materiaal dat het hele jaar door bijgehouden wordt</h2>
+    <p class="lede">
+      Twee machines staan doorlopend onder technisch beheer, één op het water en één op het
+      circuit. Per machine ligt er een dossier met alle metingen en werkorders, en wie dat
+      wil inzien is welkom in Waardenburg.
+    </p>
+
+    <div class="refs">
+
+      <!-- Geen foto's bij de referenties zolang er geen opname van de eigen machines is.
+           Een verkeerde boot bij een echte referentie kost de referentie zijn waarde. -->
+      <article class="ref rv">
+        <div class="ref__body">
+          <span class="plate__nr">Water &middot; Foxhunt Watersport</span>
+          <h3 class="ref__t">Rinker MTX 210</h3>
+          <p class="ref__d">
+            De Rinker MTX 210 van Foxhunt Watersport vaart op de Crobsche Waard voor
+            watersportinstructie en dagcharter met schipper. Woetroe voert het technisch beheer,
+            zodat de boot inzetbaar is op elke dag dat er een groep aan boord staat.
+          </p>
+          <ul class="spec">
+            <li>Vaargebied <b>Crobsche Waard</b></li>
+            <li>Inzet <b>Instructie en charter</b></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="ref rv">
+        <div class="ref__body">
+          <span class="plate__nr">Circuit &middot; Wegrace</span>
+          <h3 class="ref__t">EmpreTECH raceteam</h3>
+          <p class="ref__d">
+            De racemotoren van het EmpreTECH raceteam staan onder technisch beheer bij Woetroe:
+            revisie, afstelling en service tussen de raceweekenden. Daarnaast werkt de werkplaats
+            voor andere teams en voor particuliere rijders.
+          </p>
+          <ul class="spec">
+            <li>Discipline <b>Wegrace</b></li>
+            <li>Werk <b>Revisie en setup</b></li>
+            <li>Ritme <b>Per raceweekend</b></li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="voetnoot">
+      Beide opdrachten komen uit de eigen kring van de oprichter: Foxhunt Watersport is zijn
+      eigen onderneming en het EmpreTECH raceteam komt uit hetzelfde netwerk. Zo begint een
+      nieuwe werkplaats, en het hoort erbij te staan. Wat het aantoont zit in het object en
+      niet in de naam van de eigenaar.
+    </p>
+  </div>
+</section>
+
+<!-- Volle-breedte band met techniek van dichtbij. Elk merk in dit segment heeft
+     meerdere van deze momenten; onze pagina had er maar een. -->
+<figure class="band" style="margin:0">
+  <img src="assets/img/engine-02.jpg" alt="Sfeerbeeld van een motorruimte met turbo en spruitstuk" loading="lazy" width="1920" height="1440">
+  <figcaption class="band__cap">Onder de kap begint het werk</figcaption>
+</figure>
+
+<!-- =========================================================== diensten -->
+<section class="section section--dark" id="diensten">
+  <div class="wrap">
+    <p class="eyebrow">Diensten</p>
+    <h2 class="h-sec">Zes werksoorten onder één dak</h2>
+    <p class="lede">
+      Deze zes staan zelden los van elkaar. Een prestatievraag begint bij meten, een revisie
+      eindigt bij afstellen, en een ombouw vraagt onderweg om een onderdeel dat nog getekend
+      moet worden. Alle zes gelden voor boten en motoren; voor circuitauto's is er ruimte
+      voor de eerste opdrachten, met de remmen en de veiligheidsvoorziening als vertrekpunt.
+    </p>
+
+    <div class="grid-plates">
+
+      <article class="plate rv">
+        <div class="plate__head">
+          <h3 class="plate__t">Engineering</h3>
+          <span class="plate__nr">01</span>
+        </div>
+        <p class="plate__d">
+          Ontwerp en berekening van onderdelen en aanpassingen die in geen enkele catalogus staan.
+          Van een enkele beugel tot een complete opbouw, doorgerekend voordat het aluminium op
+          de bank ligt.
+        </p>
+        <ul class="spec">
+          <li>Ontwerp <b>3D en tekening</b></li>
+          <li>Materiaal <b>Aluminium, titanium, composiet</b></li>
+        </ul>
+      </article>
+
+      <article class="plate rv">
+        <div class="plate__head">
+          <h3 class="plate__t">Onderhoud</h3>
+          <span class="plate__nr">02</span>
+        </div>
+        <p class="plate__d">
+          Periodiek onderhoud en revisie van motoren, aandrijflijnen en randsystemen. Waar de
+          fabrikant een interval voorschrijft geldt dat interval, en waar het gebruik zwaarder
+          is gaat de beurt eerder.
+        </p>
+        <ul class="spec">
+          <li>Cyclus <b>Interval en gebruik</b></li>
+          <li>Bereik <b>Motor en aandrijflijn</b></li>
+        </ul>
+      </article>
+
+      <article class="plate rv">
+        <div class="plate__head">
+          <h3 class="plate__t">Aanpassingen</h3>
+          <span class="plate__nr">03</span>
+        </div>
+        <p class="plate__d">
+          Ombouw wanneer de machine iets moet doen waarvoor hij niet gebouwd is. Zwaardere
+          motorisering, een ander gebruiksprofiel, extra systemen aan boord die stroom en
+          ruimte vragen.
+        </p>
+        <ul class="spec">
+          <li>Aanleiding <b>Nieuw gebruik</b></li>
+          <li>Basis <b>Eigen engineering</b></li>
+        </ul>
+      </article>
+
+      <article class="plate rv">
+        <div class="plate__head">
+          <h3 class="plate__t">Performance</h3>
+          <span class="plate__nr">04</span>
+        </div>
+        <p class="plate__d">
+          Prestatie zoeken waar die te halen is, en niet waar het alleen luider van wordt.
+          Vermogen, gewicht, koeling en afstelling worden in samenhang aangepakt, met
+          betrouwbaarheid over een heel seizoen als randvoorwaarde.
+        </p>
+        <ul class="spec">
+          <li>Randvoorwaarde <b>Betrouwbaarheid</b></li>
+          <li>Bewijs <b>Meting voor en na</b></li>
+        </ul>
+      </article>
+
+      <article class="plate rv">
+        <div class="plate__head">
+          <h3 class="plate__t">Diagnose</h3>
+          <span class="plate__nr">05</span>
+        </div>
+        <p class="plate__d">
+          Zoeken naar de oorzaak van een storing of een prestatieverlies dat niemand kan
+          plaatsen. Meten, uitsluiten, en pas daarna een voorstel met een prijs eronder.
+        </p>
+        <ul class="spec">
+          <li>Ook voor <b>Werk van derden</b></li>
+          <li>Uitkomst <b>Oorzaak en voorstel</b></li>
+        </ul>
+      </article>
+
+      <article class="plate rv">
+        <div class="plate__head">
+          <h3 class="plate__t">Seizoensbeheer</h3>
+          <span class="plate__nr">06</span>
+        </div>
+        <p class="plate__d">
+          Doorlopend technisch beheer voor eigenaren en teams die hun materiaal willen gebruiken.
+          Woetroe houdt de staat bij, plant het werk tussen de evenementen en meldt vooraf wat
+          eraan komt.
+        </p>
+        <ul class="spec">
+          <li>Ritme <b>Tussen evenementen</b></li>
+          <li>Voor <b>Eigenaren en teams</b></li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================= werkplaats -->
+<section class="section section--panel" id="werkplaats">
+  <div class="wrap shop">
+    <figure class="shop__fig rv" style="margin:0">
+      <img src="assets/img/workshop-01.jpg" alt="Sfeerbeeld van een werkplaats met een auto op de brug" loading="lazy" width="1920" height="1280">
+    </figure>
+    <div>
+      <p class="eyebrow">Werkplaats Waardenburg</p>
+      <h2 class="h-sec">Alles gaat hier tot op de bout uit elkaar</h2>
+      <p class="lede">
+        Een boot komt op zijn trailer naar binnen, een motorfiets en een auto op eigen wielen,
+        en wat binnenkomt kan tot op componentniveau uit elkaar zonder dat er iets de deur uit
+        hoeft. Waardenburg ligt aan de A2 en aan de Waal, wat het voor trailerwerk net zo
+        praktisch maakt als voor werk aan een boot die zelf komt aanvaren.
+      </p>
+      <ul class="caps">
+        <li><span>Boot, motorfiets en auto in dezelfde hal, nagemeten met hetzelfde gereedschap.</span></li>
+        <li><span>Schone montage gescheiden van vuil werk, zodat er geen slijpstof in een gereviseerde motor terechtkomt.</span></li>
+        <li><span>Onderdelen die nergens te koop zijn worden hier getekend en gemaakt, in aluminium, titanium of composiet.</span></li>
+        <li><span>Per machine een dossier met alle metingen en werkorders, zodat de historie meegaat als het materiaal van eigenaar wisselt.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ contact -->
+<section class="section section--dark" id="contact">
+  <div class="wrap contact">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2 class="h-sec">Werk aanmelden</h2>
+      <p class="lede">
+        Beschrijf de machine en wat ermee moet gebeuren. Het antwoord komt van Wouter van Dijk,
+        die het werk daarna ook zelf uitvoert.
+      </p>
+
+      <ul class="contact-list">
+        <li>
+          <span class="k">Werkplaats</span>
+          <span class="v">Waardenburg, Nederland<br><span style="color:var(--on-ink-dim)">Adres en bezoek op afspraak</span></span>
+        </li>
+        <li>
+          <span class="k">E-mail</span>
+          <span class="v"><a href="mailto:info@woetroe.nl">info@woetroe.nl</a></span>
+        </li>
+        <li>
+          <span class="k">Werkgebied</span>
+          <span class="v">Nederland en België, op locatie in overleg</span>
+        </li>
+      </ul>
+    </div>
+
+    <form class="rv" action="#" method="post" novalidate>
+      <div class="field-row">
+        <div class="field">
+          <label for="f-naam">Naam</label>
+          <input id="f-naam" name="naam" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-mail">E-mailadres</label>
+          <input id="f-mail" name="email" type="email" autocomplete="email" required>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="f-tel">Telefoonnummer</label>
+          <input id="f-tel" name="telefoon" type="tel" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="f-soort">Soort machine</label>
+          <select id="f-soort" name="soort">
+            <option>Speedboot</option>
+            <option>Racemotor</option>
+            <option>Circuitauto</option>
+            <option>Anders</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-machine">Merk, type en bouwjaar</label>
+        <input id="f-machine" name="machine" type="text" placeholder="Bijvoorbeeld: Rinker MTX 210, 2008">
+      </div>
+      <div class="field">
+        <label for="f-vraag">Wat er moet gebeuren</label>
+        <textarea id="f-vraag" name="vraag" required placeholder="Klacht, doel of het werk dat u wilt laten uitvoeren."></textarea>
+      </div>
+      <button class="btn" type="submit">Aanvraag opstellen <i class="btn__arrow" aria-hidden="true"></i></button>
+      <p class="form-note">
+        De knop opent uw e-mailprogramma met de ingevulde gegevens erin. Verzenden doet u zelf.
+        Reactie binnen twee werkdagen. Uw gegevens worden alleen gebruikt om deze aanvraag te
+        behandelen en blijven binnen Woetroe.
+      </p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap foot__in">
+    <div>
+      <a class="mark" href="#top">Woetroe<span class="mark__bv">BV</span></a>
+      <p class="foot__meta" style="margin:.75rem 0 0">
+        Engineering en performance voor snelle machines<br>Waardenburg, Nederland
+      </p>
+    </div>
+    <p class="foot__meta">
+      <span>KVK nog aan te vullen</span><span>BTW nog aan te vullen</span><br>
+      <span><a href="mailto:info@woetroe.nl" style="text-decoration:none;border-bottom:1px solid var(--heat)">info@woetroe.nl</a></span>
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>
